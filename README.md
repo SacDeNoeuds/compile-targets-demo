@@ -40,10 +40,10 @@ For real projects, I think I'll have one main way to render JSX. Therefore I'd u
 As summed up somewhere still private, I see 2 types of projects: local-first and server-first. In short: do you need to access your users’ data to do something with it (not talking about analytics here!) -> server-first. Do you not care a bit about your users’ data because it’s just for them -> local-first
 
 - local-first projects -> my JSX will only be rendered client-side. One tsconfig `jsxImportSource` and job done.
-- server-first projects -> mostly server-side jsx, maybe sometimes client-side for complicated forms like search or steppers or whatever.
+- server-first projects -> mostly server-side jsx, maybe sometimes client-side for complicated forms like search or steppers or whatever. Therefore default `jsxImportSource` would be my server-side’s one.
 
 ## Going Further
 
-I haven’t tested with Svelte, but I think I know where this goes: using a svelte plugin and, if need be, add another bundle config file.
+I haven’t tested with Svelte, but I think I know where this goes: using a svelte plugin and (if need be) add another bundle config file.
 
-So… yes, all good! So much more "module federation" in the end :unamused:
+So… yes, all good! So much for "module federation" in the end :unamused:
